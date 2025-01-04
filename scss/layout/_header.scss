@@ -2,27 +2,72 @@
 
 
 %flexItemCenter {
-    display    : flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
 }
 
 
 .header {
     background: var(--header-bg-color);
-    padding   : 30px 50px;
+    padding   : 30px;
 
-    @include abstracts.breakpoint(xs) {
-        width: 100px;
+    @include abstracts.breakpoint(lg) {
+        // max-width: 960px;
+        padding: 20px 0;
+
+    }
+
+
+    @include abstracts.breakpoint(sm) {
+        // max-width: 960px;
+        padding   : 16px 50px;
+        box-shadow: 0px 20px 60px 10px var(--header-sm-shadow);
+
     }
 }
 
 .top-bar {
     @extend %flexItemCenter;
+
+    @include abstracts.breakpoint(sm) {
+        justify-content: space-between;
+    }
+
+    &__more {
+        display: none;
+
+        @include abstracts.breakpoint(lg) {
+            display        : flex;
+            margin-right   : 39px;
+            align-items    : center;
+            justify-content: center;
+
+        }
+
+        @include abstracts.breakpoint(sm) {
+            margin-right: 0;
+        }
+
+
+    }
 }
 
 
 .navbar {
     margin-left: 144px;
+
+
+    @include abstracts.breakpoint(xl) {
+        margin-left: 50px;
+
+    }
+
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    }
+
+
 
     &__list {
         @extend %flexItemCenter;
@@ -47,10 +92,14 @@
 
 .top-act {
     @extend %flexItemCenter;
-
-    // margin-right: auto;
-    margin-left: 165px;
+    // margin-left: 165px;
     column-gap : 20px;
+    margin-left: auto;
+
+    @include abstracts.breakpoint(sm) {
+        margin-left: 0;
+
+    }
 
     &__group {
         @extend %flexItemCenter;
@@ -61,6 +110,15 @@
         background   : var(--top-act-group-bg-color);
         box-shadow   : 0px 20px 60px 10px var(--top-act-group-shadow);
 
+        @include abstracts.breakpoint(md) {
+            display: none;
+        }
+    }
+
+    &__group-single {
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        }
     }
 
     &__group-single &__btn {

@@ -13,7 +13,7 @@ body {
     font-family: "Gordita", sans-serif;
     font-size  : 1.6rem;
     color      : var(--text-color);
-
+    background : var(--body-bg-color);
 }
 
 a {
@@ -27,9 +27,12 @@ button {
     background: transparent;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
     font-family: inherit;
-    color: inherit;
+    color      : inherit;
 }
 
 .icon {

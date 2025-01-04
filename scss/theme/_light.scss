@@ -1,11 +1,22 @@
+@use "../abstracts";
+
 :root {
     --text-color               : #1A162E;
     --icon-color               : brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(4192%) hue-rotate(212deg) brightness(94%) contrast(96%);
     --header-bg-color          : #eee;
+    --header-sm-shadow: rgba(237, 237, 246, 0.20);
     --top-act-group-bg-color   : #fff;
     --top-act-group-shadow     : rgba(237, 237, 246, 0.20);
     --top-act-separate-bg-color: #EDEDF6;
     --top-act-avatar           : rgba(0, 0, 0, 0.08);
+    --body-bg-color            : #F6F6F6;
 
 
+    @include abstracts.breakpoint(lg) {
+        --header-bg-color: #fff;
+    }
+
+    // @include abstracts.breakpoint(sm) {
+    //     --header-sm-shadow: rgba(237, 237, 246, 0.20);
+    // }
 }

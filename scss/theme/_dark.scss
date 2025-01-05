@@ -2,7 +2,7 @@ html.dark {
     --text-color               : #fff;
     --icon-color               : brightness(0) saturate(100%) invert(85%) sepia(100%) saturate(39%) hue-rotate(12deg) brightness(111%) contrast(100%);
     --header-bg-color          : #171C28;
-    --header-sm-shadow: rgba(0, 0, 0, 0.20);
+    --header-sm-shadow         : rgba(0, 0, 0, 0.20);
     --top-act-group-bg-color   : #292E39;
     --top-act-group-shadow     : rgba(0, 0, 0, 0.20);
     --top-act-separate-bg-color: #EDEDF6;
@@ -10,7 +10,12 @@ html.dark {
     --body-bg-color            : #292E39;
 
 
-    // @include abstracts.breakpoint(sm) {
-    //     --header-sm-shadow: rgba(0, 0, 0, 0.20);
-    // }
+    // Dropdown
+    --dropdown-bg-color      : #313643;
+    --dropdown-shadow        : rgba(23, 28, 40, 0.40);
+    --dropdown-arrow-color   : brightness(0) saturate(100%) invert(15%) sepia(23%) saturate(648%) hue-rotate(186deg) brightness(93%) contrast(82%);
+    --top-menu-border-color  : #171C28;
+    --menu-column-hover-color: #0071DC;
+
+
 }

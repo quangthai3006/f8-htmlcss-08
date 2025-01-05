@@ -21,15 +21,22 @@
 
     @include abstracts.breakpoint(sm) {
         // max-width: 960px;
-        padding   : 16px 50px;
+        padding   : 16px 10px;
         box-shadow: 0px 20px 60px 10px var(--header-sm-shadow);
 
     }
+
+    // &.fixed {
+    //     position: sticky;
+    //     top     : 100px;
+    //     z-index: 1;
+    // }
+
 }
 
 .top-bar {
     @extend %flexItemCenter;
-
+    position: relative;
     @include abstracts.breakpoint(sm) {
         justify-content: space-between;
     }
@@ -71,7 +78,6 @@
 
     &__list {
         @extend %flexItemCenter;
-        column-gap: 30px;
     }
 
     &__link {
@@ -83,6 +89,14 @@
     &-item {
         display   : flex;
         column-gap: 6px;
+
+        &:hover .dropdown {
+            display: block;
+        }
+
+        &:nth-of-type(2) {
+            padding: 0 30px;
+        }
     }
 
     &__arrow {

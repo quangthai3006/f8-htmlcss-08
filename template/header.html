@@ -1,71 +1,123 @@
 <div class="container">
-    <div class="top-bar">
-      <!-- More -->
-       <button class="top-bar__more">
-        <img src="./assets/icons/more.svg" alt="" class=" icon top-bar__icon">
-       </button>
-      <!-- Logo -->
-      <a href="./" class="logo">
-        <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
-        <h1 class="logo__title">grocerymart</h1>
-      </a>
-    
-      <!-- Navbar -->
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar-item">
-            <a href="#!" class="navbar__link">Departments </a>
-            <img
-              src="./assets/icons/arrow-down.svg"
-              alt=""
-              class="navbar__arrow icon"
-            />
-          </li>
-          <li class="navbar-item">
-            <a href="#!" class="navbar__link">Grocery</a>
-            <img
-              src="./assets/icons/arrow-down.svg"
-              alt=""
-              class="navbar__arrow icon"
-            />
-          </li>
-          <li class="navbar-item">
-            <a href="#!" class="navbar__link">Beauty</a>
-            <img
-              src="./assets/icons/arrow-down.svg"
-              alt=""
-              class="navbar__arrow icon"
-            />
-          </li>
-        </ul>
-      </nav>
-    
-      <!-- Action -->
-       <div class="top-act">
-        <div class="top-act__group top-act__group-single">
-            <button class="top-act__btn">
-                <img src="./assets/icons/search.svg" alt="" class="top-act__icon icon">
-            </button>
-        </div>
-    
-        <div class="top-act__group">
-            <button class="top-act__btn">
-                <img src="./assets/icons/heart.svg" alt="" class="top-act__icon icon">
-                <span class="top-act__title">03</span>
-            </button>
-    
-            <div class="top-act__separate"></div>
-    
-            <button class="top-act__btn">
-                <img src="./assets/icons/buy.svg" alt="" class="top-act__icon icon">
-                <span class="top-act__title">$65.42</span>
-            </button>
-        </div>
-    
-        <div class="top-act__user">
-            <img src="./assets/Image-FB/images.jpg" alt="" class="top-act__avatar">
-        </div>
-       </div>
+  <div class="top-bar">
+    <!-- More -->
+    <button class="top-bar__more">
+      <img src="./assets/icons/more.svg" alt="" class="icon top-bar__icon" />
+    </button>
+    <!-- Logo -->
+    <a href="./" class="logo">
+      <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+      <h1 class="logo__title">grocerymart</h1>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar__list js-dropdown-list">
+        <li class="navbar-item">
+          <a href="https://www.facebook.com/hoichatgpt/" class="navbar__link"
+            >Departments
+          </a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="navbar__arrow icon"
+          />
+
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <div class="dropdown__inner">
+              <div class="top-menu">
+                <div class="top-menu__main">
+                  <!-- Menu col -->
+                  <div class="menu-column">
+                    <div class="menu-column__icon">
+                      <img
+                        src="../assets/img/category/cate1_1.svg"
+                        alt=""
+                        class="menu-column__icon-1"
+                      />
+                      <img
+                        src="../assets/img/category/cate1_2.svg"
+                        alt=""
+                        class="menu-column__icon-2"
+                      />
+                    </div>
+                    <div class="menu-column__content">
+                      <h2 class="menu-column__heading">All Departments</h2>
+                      <ul class="menu-column__list">
+                        <li>
+                          <a href="#!" class="menu-column__link">Savings & Featured Shops</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="menu-column__link">Electronics</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="menu-column__link">Clothing, Shoes & Accessories</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="#!" class="navbar__link">Grocery</a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="navbar__arrow icon"
+          />
+        </li>
+        <li class="navbar-item">
+          <a href="#!" class="navbar__link">Beauty</a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="navbar__arrow icon"
+          />
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Action -->
+    <div class="top-act">
+      <div class="top-act__group top-act__group-single">
+        <button class="top-act__btn">
+          <img
+            src="./assets/icons/search.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
+        </button>
+      </div>
+
+      <div class="top-act__group">
+        <button class="top-act__btn">
+          <img
+            src="./assets/icons/heart.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
+          <span class="top-act__title">03</span>
+        </button>
+
+        <div class="top-act__separate"></div>
+
+        <button class="top-act__btn">
+          <img src="./assets/icons/buy.svg" alt="" class="top-act__icon icon" />
+          <span class="top-act__title">$65.42</span>
+        </button>
+      </div>
+
+      <div class="top-act__user">
+        <img
+          src="./assets/Image-FB/images.jpg"
+          alt=""
+          class="top-act__avatar"
+        />
+      </div>
     </div>
-    
+  </div>
 </div>
